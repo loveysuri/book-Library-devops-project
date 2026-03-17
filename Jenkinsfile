@@ -21,6 +21,18 @@ pipeline {
             }
         }
 
+        stage('Build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t lovekumar63988/book-library .'
+            }
+        }
+
+
         stage('Build Docker Image') {
             steps {
                 script {
