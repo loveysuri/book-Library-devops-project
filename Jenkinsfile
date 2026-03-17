@@ -50,6 +50,25 @@ pipeline {
                 }
             }
         }
+        stage('Deploy to Kubernetes') {
+    steps {
+        withCredentials([file(credentialsId: 'kubeconfig', variable: 'KUBECONFIG')]) {
+            sh '''
+                echo "Using kubeconfig: $KUBECONFIG"
+
+                # Verify cluster connection
+                kubectl get nodes
+
+                kubectl apply -f db-deployment.yaml
+                kubectl rollout status deployment/mysql
+
+                
+                kubectl apply -f app-deployment.yaml
+                kubectl rollout status deployment/springboot-crud-deployment
+            '''
+        }
+    }
+}
     }
 
     post {
