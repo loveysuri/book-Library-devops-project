@@ -48,13 +48,13 @@
 
 
 <build>
-<finalName>springboot-crud</finalName>
+<finalName>book-library</finalName>
 <plugins>
 <plugin>
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-maven-plugin</artifactId>
 <configuration>
-<finalName>springboot-crud</finalName>
+<finalName>book-library</finalName>
 </configuration>
 </plugin>
 </plugins>
