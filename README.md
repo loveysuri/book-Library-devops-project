@@ -95,6 +95,23 @@ kubectl apply -f db-deployment.yaml
 ```
 kubectl get pods
 ```
+## 💡 Screenshots
+
+* Jenkins Execution
+<img width="1901" height="892" alt="image" src="https://github.com/user-attachments/assets/6a429f88-44c1-4825-a7bc-e60ad7874110" />
+
+* Docker Registry
+  <img width="1863" height="721" alt="image" src="https://github.com/user-attachments/assets/da7a9fa5-1f06-4957-b765-1d35c7b9e599" />
+
+* Pods
+<img width="1336" height="333" alt="image" src="https://github.com/user-attachments/assets/809f6f02-1307-4d43-8d16-b57b6c437ef6" />
+
+* App Working
+<img width="1306" height="912" alt="image" src="https://github.com/user-attachments/assets/eee3e6e0-1169-4760-8de8-a97f81a4022e" />
+
+
+
+
 
 
 ## 💡 Key Features
